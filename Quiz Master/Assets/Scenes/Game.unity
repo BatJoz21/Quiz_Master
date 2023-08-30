@@ -1416,7 +1416,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7250457290957735506, guid: 2757888749fcead448814f13017919e6, type: 3}
       propertyPath: m_Name
-      value: ButtonAnswer
+      value: ButtonAnswer (0)
       objectReference: {fileID: 0}
     - target: {fileID: 7957064572460414160, guid: 2757888749fcead448814f13017919e6, type: 3}
       propertyPath: m_Pivot.x
