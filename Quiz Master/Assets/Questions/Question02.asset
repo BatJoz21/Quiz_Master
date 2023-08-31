@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: What is the name of the person that brought the Night Mother's body to
     the Dark Brotherhood's Sanctuary in Skyrim?
+  answers:
+  - Cisero
+  - Ulfric Stormcloak
+  - Rizki
+  - Ysolda
+  correctAnswerIndex: 0

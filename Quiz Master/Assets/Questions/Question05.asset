@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question05
   m_EditorClassIdentifier: 
   question: Who is constantly promoting the reforming of the Dawnguard?
+  answers:
+  - Guards(Almost every city guards)
+  - Adoring fan
+  - Jhon E
+  - Martin Septim
+  correctAnswerIndex: 0

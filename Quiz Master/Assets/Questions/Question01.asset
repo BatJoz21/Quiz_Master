@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: What is the name of the person that say the famous quote "Hey, you. You're
     finally awake"?
+  answers:
+  - Tiber Septim
+  - Ysgamor
+  - Ralof
+  - J'zargo
+  correctAnswerIndex: 2

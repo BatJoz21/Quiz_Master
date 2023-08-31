@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question04
   m_EditorClassIdentifier: 
   question: What is the name of the Daedric Prince that gifted the sword Dawnbreaker?
+  answers:
+  - Mehrunes Dagon
+  - Jyggalag
+  - Meridia
+  - Hircine
+  correctAnswerIndex: 2
