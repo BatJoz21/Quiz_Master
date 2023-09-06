@@ -13,7 +13,7 @@ public class QuestionSO : ScriptableObject
     //public string GetQuestion { get => question; }
     //public int GetCorrectAnswerIndex { get => correctAnswerIndex; }
     public string GetQuestion() { return question; }
-    public int getCorrectAnswerIndex() { return correctAnswerIndex; }
+    public int GetCorrectAnswerIndex() { return correctAnswerIndex; }
 
     public string GetAnswer(int index) { return answers[index]; }
 }
