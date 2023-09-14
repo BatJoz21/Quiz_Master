@@ -730,7 +730,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToAnswer: 30
   timeToShowAnswer: 10
+  loadNextQuestion: 0
   isAnsweringQuestion: 0
+  fillFraction: 0
 --- !u!1 &1303843178
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +861,7 @@ MonoBehaviour:
   - {fileID: 1636084605}
   defaultAnswSprite: {fileID: 21300000, guid: 7fbe358a3a9707544a988ae8495f2d53, type: 3}
   correctAnswSprite: {fileID: 21300000, guid: 422a1d2fb04a0fd4aaf2c1d1928f2a1a, type: 3}
+  timerImage: {fileID: 279119855}
 --- !u!1001 &1325583226
 PrefabInstance:
   m_ObjectHideFlags: 0
