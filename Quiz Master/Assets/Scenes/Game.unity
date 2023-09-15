@@ -852,8 +852,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e205a8c851d7b1440acc39f5819aaf32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionSO: {fileID: 11400000, guid: a33b396edacc8b5428061a5715cdd892, type: 2}
   questionText: {fileID: 1210612283}
+  questionSO:
+  - {fileID: 11400000, guid: a33b396edacc8b5428061a5715cdd892, type: 2}
+  - {fileID: 11400000, guid: e83d6e860a01561438789ad7e3b0b39e, type: 2}
+  - {fileID: 11400000, guid: ce00d0049989e90439b6536b14628332, type: 2}
+  - {fileID: 11400000, guid: ef76b22997f34c043b39169deeaef751, type: 2}
+  - {fileID: 11400000, guid: f6d100631e396a74b83e41c3d6140735, type: 2}
   answerButtons:
   - {fileID: 1901228829558406207}
   - {fileID: 1738730761}

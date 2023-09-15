@@ -7,8 +7,9 @@ using UnityEngine.UI;
 public class Quiz : MonoBehaviour
 {
     [Header("Questions")]
-    [SerializeField] QuestionSO questionSO;
     [SerializeField] TextMeshProUGUI questionText;
+    [SerializeField] List<QuestionSO> questionSO = new List<QuestionSO>();
+    QuestionSO currentQuestion;
 
     [Header("Answers")]
     [SerializeField] GameObject[] answerButtons;
@@ -26,8 +27,6 @@ public class Quiz : MonoBehaviour
     void Start()
     {
         timer = FindObjectOfType<Timer>();
-        //DisplayQuestion();
-        GetNextQuestion();
     }
 
     void Update()
@@ -57,7 +56,7 @@ public class Quiz : MonoBehaviour
     private void DisplayAnswer(int index)
     {
         Image buttonImage;
-        if (index == questionSO.GetCorrectAnswerIndex())
+        if (index == currentQuestion.GetCorrectAnswerIndex())
         {
             questionText.text = questionText.text + "\n You're Answer is Correct";
             buttonImage = answerButtons[index].GetComponent<Image>();
@@ -66,26 +65,44 @@ public class Quiz : MonoBehaviour
         else
         {
             questionText.text = questionText.text + "\n You're Answer is Wrong, Here is the Correct Answer";
-            buttonImage = answerButtons[questionSO.GetCorrectAnswerIndex()].GetComponent<Image>();
+            buttonImage = answerButtons[currentQuestion.GetCorrectAnswerIndex()].GetComponent<Image>();
             buttonImage.sprite = correctAnswSprite;
         }
     }
 
     private void GetNextQuestion()
     {
-        SetButtonState(true);
-        SetDefaultButtonSprite();
-        DisplayQuestion();
+        if (questionSO.Count > 0)
+        {
+            SetButtonState(true);
+            SetDefaultButtonSprite();
+            GetRandomQuestion();
+            DisplayQuestion();
+        }
+        else
+        {
+            Debug.Log("Abis");
+        }
+    }
+
+    private void GetRandomQuestion()
+    {
+        int temp = Random.Range(0, questionSO.Count);
+        currentQuestion = questionSO[temp];
+        if (questionSO.Contains(currentQuestion))
+        {
+            questionSO.Remove(currentQuestion);
+        }
     }
 
     private void DisplayQuestion()
     {
-        questionText.text = questionSO.GetQuestion();
+        questionText.text = currentQuestion.GetQuestion();
 
         for (int i = 0; i < answerButtons.Length; i++)
         {
             TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            buttonText.text = questionSO.GetAnswer(i);
+            buttonText.text = currentQuestion.GetAnswer(i);
         }
     }
 
