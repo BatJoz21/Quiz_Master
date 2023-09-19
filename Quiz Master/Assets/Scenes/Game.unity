@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToAnswer: 30
-  timeToShowAnswer: 10
+  timeToShowAnswer: 5
   loadNextQuestion: 0
   isAnsweringQuestion: 0
   fillFraction: 0
@@ -1045,6 +1045,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce00d0049989e90439b6536b14628332, type: 2}
   - {fileID: 11400000, guid: ef76b22997f34c043b39169deeaef751, type: 2}
   - {fileID: 11400000, guid: f6d100631e396a74b83e41c3d6140735, type: 2}
+  - {fileID: 11400000, guid: fe86b680694bd6142af0175eb82733ba, type: 2}
   answerButtons:
   - {fileID: 1901228829558406207}
   - {fileID: 1738730761}

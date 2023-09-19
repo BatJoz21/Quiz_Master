@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3668ca85704f64ca33edc8b277ab6a, type: 3}
   m_Name: Question02
   m_EditorClassIdentifier: 
-  question: What is the name of the person that brought the Night Mother's body to
-    the Dark Brotherhood's Sanctuary in Skyrim?
+  question: Who won the tournament format in the first ever UFC event?
   answers:
-  - Cisero
-  - Ulfric Stormcloak
-  - Rizki
-  - Ysolda
+  - Royce Gracie
+  - Gerard Gordeau
+  - Ken Shamrock
+  - Art Jimmerson
   correctAnswerIndex: 0

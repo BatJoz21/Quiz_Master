@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3668ca85704f64ca33edc8b277ab6a, type: 3}
   m_Name: Question04
   m_EditorClassIdentifier: 
-  question: What is the name of the Daedric Prince that gifted the sword Dawnbreaker?
+  question: Who is the first UFC Lightweight Champion?
   answers:
-  - Mehrunes Dagon
-  - Jyggalag
-  - Meridia
-  - Hircine
+  - BJ Penn
+  - Caol Uno
+  - Jens Pulver
+  - Sean Sherk
   correctAnswerIndex: 2
