@@ -31,6 +31,10 @@ public class Quiz : MonoBehaviour
     [Header("ProgressBar")]
     [SerializeField] private Slider progressBar;
 
+    [Header("Audio")]
+    [SerializeField] private AudioManager audioManager;
+
+    [Header("Others")]
     public bool isComplete = false;
 
     void Start()
@@ -78,6 +82,7 @@ public class Quiz : MonoBehaviour
         Image buttonImage;
         if (index == currentQuestion.GetCorrectAnswerIndex())
         {
+            audioManager.PlayCorrectAnswerAudio();
             questionText.text = questionText.text + "\n You're Answer is Correct";
             buttonImage = answerButtons[index].GetComponent<Image>();
             buttonImage.sprite = correctAnswSprite;
@@ -85,6 +90,7 @@ public class Quiz : MonoBehaviour
         }
         else
         {
+            audioManager.PlayWrongAnswerAudio();
             questionText.text = questionText.text + "\n You're Answer is Wrong, Here is the Correct Answer";
             buttonImage = answerButtons[currentQuestion.GetCorrectAnswerIndex()].GetComponent<Image>();
             buttonImage.sprite = correctAnswSprite;
